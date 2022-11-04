@@ -5,7 +5,7 @@
 - All new pseudocode alternative syntax can be found under the "Syntax" section
 
 ## Syntax
-- [v1.0] [ENDING DENOTATION] "next x", "endif", "endwhile", "endfunction" can all be used to denote the end of a statement/loop/function
+- [v1.0] [ENDING DENOTATION] "endwhile", "endfunction", etc. can all be used to denote the end of a statement/loop/function
 - [v1.0] [FOR LOOPS] "= x to y" can be used instead of "in range(x,y)"
 - [v1.0] [FUNCTIONS] "function" can be used instead of "def" when defining functions
 
