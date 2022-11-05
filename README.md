@@ -12,7 +12,7 @@
  
 - **[v1.0]** [ENDING DENOTATION] `endwhile`, `endfunction`, `endif`, `next i`, etc. can all be used to denote the end of a statement, loop or function.
 
-- **[v1.0]** [FUNCTIONS] `function funcName():` can be used instead of `def funcName():` when defining functions.
+- **[v1.0]** [FUNCTIONS] The keyword `function` can be used as an alternative to `def` when defining functions.
 
 - **[v1.1]** [FOR LOOPS] `for x = y to z` can be used instead of `for x in range(y,z)`.
 
