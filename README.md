@@ -51,5 +51,5 @@ funcName(10)
 - [v1.1] Implemented $ system to allow .
 - 
 ### ARCHIVED INFORMATION
-- [ARCHIVE-DATE] [ARCHIVE-VERSION] [INFO-TYPE] INFORMATION 
-- [05/11/22] [v1.1] [FOR LOOPS] "= y to z" can be used instead of "in range(y,z)".
+- [ARCHIVE-DATE] [ARCHIVE-VERSION] [ARCHIVE-REASON] [INFO-TYPE] INFORMATION 
+- [05/11/22] [v1.1] [Newer, flexible system added] [FOR LOOPS] "= y to z" can be used instead of "in range(y,z)".
