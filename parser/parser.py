@@ -1,6 +1,5 @@
 from os import system as sys
 from os import path as p
-from random import choice
 import re
 
 if p.exists('./main.pspy'):
