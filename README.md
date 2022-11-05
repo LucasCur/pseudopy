@@ -1,5 +1,5 @@
 # PseudoPY
-- The only usable pseudopy file extensions are `.pseudopy` and `.pspy`".
+- The only usable pseudopy file extensions are `.pseudopy` and `.pspy`.
 - All pseudocode must be contained within a `main.pspy` file with any suitable pseudopy file extension, or will not be ran by the parser.
 - All normal python syntax is still functional and available.
 - Indents are no longer neccesary for code to function, however still **highly** recommended as this feature is experimental and may introduce errors to code when used.
