@@ -57,4 +57,4 @@ funcName(10)
 - **[05/11/22] [v1.1] [Newer, improved system added] [FOR LOOPS]** `= x to y` can be used instead of `in range(x,y)`.
 
 ## LICENSE
-PseudoPY is protected by the Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0) license, a full copy of which can be found either [here](https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode) or in this repository @ [pseudopy/LICENSE](https://github.com/LucasCur/pseudopy/blob/main/LICENSE)
+PseudoPY is protected by the Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0) license, a full copy of which can be found either [here](https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode) or [here](https://github.com/LucasCur/pseudopy/blob/main/LICENSE).
