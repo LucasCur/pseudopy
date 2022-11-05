@@ -14,6 +14,8 @@
 
 - **[v1.1]** [ANTI-REPLACE] If the parser, for example, changed all instances of one word to another, such as "function" to "def" `(which is done by PseudoPY to allow you to define functions using the keyword function instead of def)`, you are able to revert this for specific instances by including a **$** after the changed word, which will prevent the change and remove itself after doing so, leaving the word unchanged in the final parsed code that is ran. If however, you do want a **visible** **$** to come after the word for whatever reason and this is now preventing that, simply add another **$** as if the first one you added doesn't exist. **This is applicable to most cases when words may be changed/replaced throughout your use of PseudoPY, not just with the word "function", which was used only as an example in this situation.**
 
+- **[v1.2]** [PSPY] By default, the `pspy_ver` variable will always be available for use within pseudopy files parsed.
+
 ## Example Usage
 
 - Example #1 `(For Loops)`
