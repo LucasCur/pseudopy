@@ -1,17 +1,16 @@
 from os import system as sys
+from os import path as p
 from random import choice
 import re
 
-sys("clear")
+if p.exists('./main.pspy'):
+    codefile = open("main.pspy", "r").read()
+elif p.exists('./main.pseudopy'):
+    codefile = open("main.pseudopy", "r").read()
+else:
+    print("No [main.pspy] or [main.pseudopy] file found.")
+    exit()
 
-differences = [["function ","def "]]
-
-codefile = open("main.pseudopy", "r").read()
-
-for iteration in range(0,len(differences)):
-  codefile = codefile.replace(differences[iteration][0],differences[iteration][1])
-
-codefile = open("main.pseudopy", "r").read()
 code = [i.strip() for i in codefile.splitlines() if i.strip() != ""]
 
 for line in range(0,len(code)):
@@ -58,4 +57,4 @@ def parse(code):
 
     return "\n".join([i for i in final.splitlines() if i != ""])
 
-exec(parse(code), {"$pseudopy_ver": 1.1})
+exec(parse(code), {"pspy_ver": 1.2})
