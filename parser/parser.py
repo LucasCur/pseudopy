@@ -32,22 +32,16 @@ def parse(code):
     for j, k in enumerate(code):
         for i, v in enumerate(k.splitlines()):
             v = v.strip()
-            if v == "endfunction":
-                indent -= 1
-                v = ""
-                continue
-            elif v == "endif":
-                indent -= 1
-                v = ""
-                continue
-            elif v == "endwhile":
-                indent -= 1
-                v = ""
-                continue
-            elif "next " in v:
-                indent -= 1
-                v = ""
-                continue
+            for i in ["endfunction", "end", "endif", "endwhile","next "]:
+                if v == i:
+                    indent -= 1
+                    v = ""
+                    continue
+            if re.search("next ([A-Za-z0-9]+)",v):
+                if v[0] == "n":
+                    indent -= 1
+                    v = ""
+                    continue
             if v.split()[0] in ["if", "elif", "else", "for", "while", "def", "class", "try", "except", "finally"]:
                 v = "    " * indent + v
                 indent += 1
@@ -56,4 +50,4 @@ def parse(code):
 
     return "\n".join([i for i in final.splitlines() if i != ""])
 
-exec(parse(code), {"pspy_ver": 1.2})
+exec(parse(code), {"pspy_ver": 1.3})
