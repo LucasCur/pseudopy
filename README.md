@@ -53,6 +53,7 @@ funcName(10)
 - **[v1.1]** Implemented $ system (Anti-Replace) to allow for exclusions to be made to how the parser replaces certain words to allow the pseudocode to run in python.
 - **[v1.2]** Implemented the shortened file extension `.pspy` as an alternative to `.pseudopy`, and by default it will take prioritory over its lengthier counterpart.
 - **[v1.3]** Revamped the way the parser checks if a line of code is an end statement to avoid situations similar to why I made the Anti-Replace $ method, where the parser mistakes a string as something it needs to change for the code to function. `(As well as to clean up the code's messiness)`
+- **[v1.3]** Removed obselete sections of code from pre-v1.0 reducing size by roughly 20%.
 
 ## ARCHIVED INFORMATION 📦
 - **[ARCHIVE-DATE] [ARCHIVE-VERSION] [ARCHIVE-REASON] [INFO-TYPE]** INFORMATION 
