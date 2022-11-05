@@ -1,9 +1,9 @@
 # PseudoPY
-- The only usable pseudopy file extensions are ".pseudopy" and ".pspy".
-- All pseudocode must be contained within a "main" file with a pseudopy file extension, or will not be ran by the parser.
+- The only usable pseudopy file extensions are `.pseudopy` and `.pspy`".
+- All pseudocode must be contained within a `main.pspy` file with any suitable pseudopy file extension, or will not be ran by the parser.
 - All normal python syntax is still functional and available.
-- Indents are no longer neccesary for code to function, however still highly recommended as this feature is experimental and may introduce errors to code when used.
-- All new pseudocode alternative syntax can be found under the "Syntax" section.
+- Indents are no longer neccesary for code to function, however still **highly** recommended as this feature is experimental and may introduce errors to code when used.
+- All new pseudocode alternative syntax can be found under the **"Syntax"** section.
 
 ## Syntax
 - **[v1.0]** [ENDING DENOTATION] `endwhile`, `endfunction`, `endif`, `next i`, etc. can all be used to denote the end of a statement, loop or function.
