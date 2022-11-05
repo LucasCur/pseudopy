@@ -1,5 +1,6 @@
 from os import system as sys
 from os import path as p
+from random import choice
 import re
 
 if p.exists('./main.pspy'):
@@ -32,12 +33,11 @@ def parse(code):
     for j, k in enumerate(code):
         for i, v in enumerate(k.splitlines()):
             v = v.strip()
-            for i in ["endfunction", "end", "endif", "endwhile","next "]:
-                if v == i:
-                    indent -= 1
-                    v = ""
-                    continue
-            if re.search("next ([A-Za-z0-9]+)",v):
+            if (v == "endfunction") or (v == "endif") or (v == "endwhile"):
+                indent -= 1
+                v = ""
+                continue
+            elif re.search("next ([A-Za-z0-9]+)",v):
                 if v[0] == "n":
                     indent -= 1
                     v = ""
