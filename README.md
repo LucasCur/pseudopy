@@ -52,6 +52,9 @@ funcName(10)
 - **[v1.1]** Overhauled old, rudimentary for loop system to allow any variable to be the iterator and any variable or value to be the beginning or ending parameters.
 - **[v1.1]** Implemented $ system (Anti-Replace) to allow for exclusions to be made to how the parser replaces certain words to allow the pseudocode to run in python.
 
-### ARCHIVED INFORMATION
+## ARCHIVED INFORMATION
 - **[ARCHIVE-DATE] [ARCHIVE-VERSION] [ARCHIVE-REASON] [INFO-TYPE]** INFORMATION 
 - **[05/11/22] [v1.1] [Newer, improved system added] [FOR LOOPS]** `= x to y` can be used instead of `in range(x,y)`.
+
+## LICENSE
+PseudoPY is protected by the Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0) license, a full copy of which can be found either [here](https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode) or in this repository @ [pseudopy/LICENSE](https://github.com/LucasCur/pseudopy/blob/main/LICENSE)
