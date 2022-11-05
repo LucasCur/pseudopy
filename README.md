@@ -49,9 +49,9 @@ funcName(10)
 ```
 
 ## Changelog
-- [v1.1] Overhauled old, rudimentary for loop system to allow any variable to be the iterator and any variable or value to be the beginning or ending parameters.
-- [v1.1] Implemented $ system (Anti-Replace) to allow for exclusions to be made to how the parser replaces certain words to allow the pseudocode to run in python.
+- `[v1.1]` Overhauled old, rudimentary for loop system to allow any variable to be the iterator and any variable or value to be the beginning or ending parameters.
+- `[v1.1]` Implemented $ system (Anti-Replace) to allow for exclusions to be made to how the parser replaces certain words to allow the pseudocode to run in python.
 - 
 ### ARCHIVED INFORMATION
-- [ARCHIVE-DATE] [ARCHIVE-VERSION] [ARCHIVE-REASON] [INFO-TYPE] INFORMATION 
-- [05/11/22] [v1.1] [Newer, improved system added] [FOR LOOPS] "= x to y" can be used instead of "in range(x,y)".
+- `[ARCHIVE-DATE] [ARCHIVE-VERSION] [ARCHIVE-REASON] [INFO-TYPE]` INFORMATION 
+- `[05/11/22] [v1.1] [Newer, improved system added] [FOR LOOPS]` "= x to y" can be used instead of "in range(x,y)".
