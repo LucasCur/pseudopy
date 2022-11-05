@@ -13,7 +13,7 @@
 - **[v1.1]** [FOR LOOPS] `for x = y to z` can be used instead of `for x in range(y,z)`.
 
 - **[v1.1]** [ANTI-REPLACE] If the parser, for example, changed all instances of one word to another, such as "function" to "def" `(which is done to allow you to define functions using the keyword function instead of def)`, you are able to revert this for specific instances by including a **$** after the word, which will prevent the change and remove itself after doing so, leaving the word unchanged in the final parsed code that is ran. If however, you do want a **visible** **$** to come after the word for whatever reason and this is now preventing that, simply add another **$** as if the first one you added doesn't exist. **This is applicable to all cases when words may be replaced, not just with the word "function"**
-- 
+
 ## Example Usage
 
 - Example #1 `(For Loops)`
@@ -51,7 +51,7 @@ funcName(10)
 ## Changelog
 - **[v1.1]** Overhauled old, rudimentary for loop system to allow any variable to be the iterator and any variable or value to be the beginning or ending parameters.
 - **[v1.1]** Implemented $ system (Anti-Replace) to allow for exclusions to be made to how the parser replaces certain words to allow the pseudocode to run in python.
-- 
+
 ### ARCHIVED INFORMATION
 - **[ARCHIVE-DATE] [ARCHIVE-VERSION] [ARCHIVE-REASON] [INFO-TYPE]** INFORMATION 
 - **[05/11/22] [v1.1] [Newer, improved system added] [FOR LOOPS]** `= x to y` can be used instead of `in range(x,y)`.
