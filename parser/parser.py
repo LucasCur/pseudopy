@@ -4,13 +4,20 @@ import re
 
 sys("clear")
 
-differences = [["= 0 to 10","in range(0,10)"],["= 0 to 5","in range(0,5)"],["function ","def "]]
+differences = [["function ","def "]]
 
 codefile = open("main.pseudopy", "r").read()
+
 for iteration in range(0,len(differences)):
   codefile = codefile.replace(differences[iteration][0],differences[iteration][1])
 
+codefile = open("main.pseudopy", "r").read()
 code = [i.strip() for i in codefile.splitlines() if i.strip() != ""]
+
+for line in range(0,len(code)):
+    code[line] = re.sub("([A-Za-z0-9]+) = ([A-Za-z0-9]+) to ([A-Za-z0-9]+)", "\\1 in range(\\2, \\3)", code[line])
+    code[line] = re.sub("function ([A-Za-z0-9]+)()", "def \\1", code[line])
+    code[line] = code[line].replace("function$", "function")
 
 def removestrings(string):
     varpattern = "(\"|\')(.*?)(\"|\')"
@@ -51,4 +58,4 @@ def parse(code):
 
     return "\n".join([i for i in final.splitlines() if i != ""])
 
-exec(parse(code), {"$pseudopy_ver": 1.0})
+exec(parse(code), {"$pseudopy_ver": 1.1})
