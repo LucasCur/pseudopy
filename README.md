@@ -5,10 +5,13 @@
 - All new pseudocode alternative syntax can be found under the "Syntax" section
 
 ## Syntax
-- [v1.0] [ENDING DENOTATION] "endwhile", "endfunction", etc. can all be used to denote the end of a statement/loop/function
-- [v1.0] [FUNCTIONS] "function" can be used instead of "def" when defining functions
-- [v1.1] [FOR LOOPS] "for x = y to z" can be used instead of "for x in range(y,z)"
-- [v1.1] [SYNTAX] If the parser changes all instances of "function" to "def" to make the pseudocode run in python, however for an instance you want this to not be the case (i.e. you referenced function in the string "i am using a function because xyz" and the parser changed this to "i am using a def because xyz", then include a $ after "function" and this will be ignored from the parsing. After doing this, "i am using a function$ because xyz" will become "i am using a function because xyz" inside your string. If however, you want a $ to come after the word function in a string for whatever reason and this is now preventing that, simply add a second $)
+- [v1.0] [ENDING DENOTATION] "endwhile", "endfunction", "endif", "next i", etc. can all be used to denote the end of a statement, loop or function.
+
+- [v1.0] [FUNCTIONS] "function" can be used instead of "def" when defining functions.
+
+- [v1.1] [FOR LOOPS] "for x = y to z" can be used instead of "for x in range(y,z)".
+
+- [v1.1] [SYNTAX] If the parser changed all instances of "function" to "def" inside your code to make the pseudocode run in python, however for a singular instance or multiple instances you want this to not be the case (i.e. you referenced function in the string "i am using a function because xyz" and the parser changed this to "i am using a def because xyz", then include a $ after "function" and this will be ignored from the parsing. After doing this, "i am using a function$ because xyz" will become "i am using a function because xyz" inside your string. If however, you want a $ to come after the word function in a string for whatever reason and this is now preventing that, simply add a second $).
 
 ## Example Usage
 
@@ -48,4 +51,5 @@ funcName(10)
 - [v1.1] Implemented $ system to allow .
 - 
 ### ARCHIVED INFORMATION
-- [ARCHIVE-DATE] [ARCHIVE-VERSION] INFORMATION 
+- [ARCHIVE-DATE] [ARCHIVE-VERSION] [INFO-TYPE] INFORMATION 
+- [05/11/22] [v1.1] [FOR LOOPS] "= y to z" can be used instead of "in range(y,z)".
