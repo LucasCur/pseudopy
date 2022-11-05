@@ -36,7 +36,7 @@ while x == True:
 endwhile
 ```
 
-- Example #3 `(Functions & For Loops $ Anti-Replace)`
+- Example #3 `(Functions & For Loops & Anti-Replace)`
 ```
 function funcName(argument):
   for i = 0 to argument:
