@@ -7,7 +7,7 @@ if p.exists('./main.pspy'):
 elif p.exists('./main.pseudopy'):
     codefile = open("main.pseudopy", "r").read()
 else:
-    print("No [main.pspy] or [main.pseudopy] file found.")
+    print("No main.pspy or main.pseudopy file found.")
     exit()
 
 code = [i.strip() for i in codefile.splitlines() if i.strip() != ""]
@@ -16,15 +16,6 @@ for line in range(0,len(code)):
     code[line] = re.sub("([A-Za-z0-9]+) = ([A-Za-z0-9]+) to ([A-Za-z0-9]+)", "\\1 in range(\\2, \\3)", code[line])
     code[line] = re.sub("function ([A-Za-z0-9]+)()", "def \\1", code[line])
     code[line] = code[line].replace("function$", "function")
-
-def removestrings(string):
-    varpattern = "(\"|\')(.*?)(\"|\')"
-    while len(re.findall(varpattern, string)) != 0:
-        search = re.search(varpattern, string)
-        if search:
-            span = list(search.span())
-            string = string.replace(string[span[0]:span[1]], " " * len(string[span[0]:span[1]]))
-    return string
 
 def parse(code):
     final = ""
