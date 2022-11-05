@@ -1,3 +1,5 @@
+`Current Version: v1.3`
+
 # PseudoPY 🗺️
 - The only usable pseudopy file extensions are `.pseudopy` and `.pspy`.
 - All pseudocode must be contained within a `main.pspy` file with any suitable pseudopy file extension, or will not be ran by the parser.
@@ -54,6 +56,7 @@ funcName(10)
 - **[v1.1]** Overhauled old, rudimentary for loop system to allow any variable to be the iterator and any variable or value to be the beginning or ending parameters.
 - **[v1.1]** Implemented $ system (Anti-Replace) to allow for exclusions to be made to how the parser replaces certain words to allow the pseudocode to run in python.
 - **[v1.2]** Implemented the shortened file extension `.pspy` as an alternative to `.pseudopy`, and by default it will take prioritory over its lengthier counterpart.
+- **[v1.3]** Revamped the way the parser checks if a line of code is an end statement to avoid situations similar to why I made the Anti-Replace $ method, where the parser mistakes a string as something it needs to change for the code to function. `(As well as to clean up the code's messiness)`
 
 ## ARCHIVED INFORMATION 📦
 - **[ARCHIVE-DATE] [ARCHIVE-VERSION] [ARCHIVE-REASON] [INFO-TYPE]** INFORMATION 
