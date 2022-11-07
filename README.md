@@ -1,4 +1,4 @@
-`Current Version: v1.3`
+`Current Version: v1.4`
 
 # PseudoPY 🗺️
 - The only usable pseudopy file extensions are `.pseudopy` and `.pspy`.
@@ -13,6 +13,8 @@
 - **[v1.0]** [FUNCTIONS] The keyword `function` can be used as an alternative to `def` when defining functions.
 - **[v1.1]** [FOR LOOPS] `for x = y to z` can be used instead of `for x in range(y,z)`.
 - **[v1.1]** [ANTI-REPLACE] If the parser, for example, changed all instances of one word to another, such as "function" to "def" `(which is done by PseudoPY to allow you to define functions using the keyword function instead of def)`, you are able to revert this for specific instances by including a **$** after the changed word, which will prevent the change and remove itself after doing so, leaving the word unchanged in the final parsed code that is ran. If however, you do want a **visible** **$** to come after the word for whatever reason and this is now preventing that, simply add another **$** as if the first one you added doesn't exist. **This is applicable to most cases when words may be changed/replaced throughout your use of PseudoPY, not just with the word "function", which was used only as an example in this situation.**
+- **[v1.4]** [SYNTAX] `MOD` can be used instead of `%`.
+- **[v1.4]** [SYNTAX] `DIV` can be used instead of `//` for integer division.
 
 ## Example Usage 🪁
 
