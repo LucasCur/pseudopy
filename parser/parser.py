@@ -7,19 +7,21 @@ if p.exists('./main.pspy'):
 elif p.exists('./main.pseudopy'):
     codefile = open("main.pseudopy", "r").read()
 else:
-    print("No main.pspy or main.pseudopy file found.")
+    print("No [main.pspy] or [main.pseudopy] file found.")
     exit()
 
 code = [i.strip() for i in codefile.splitlines() if i.strip() != ""]
 
-for line in range(0,len(code)):
-    code[line] = re.sub("([A-Za-z0-9]+) = ([A-Za-z0-9]+) to ([A-Za-z0-9]+)", "\\1 in range(\\2, \\3)", code[line])
-    code[line] = re.sub("function ([A-Za-z0-9]+)()", "def \\1", code[line])
-    code[line] = code[line].replace("function$", "function")
-
 def parse(code):
     final = ""
     indent = 0
+    for line in range(0,len(code)):
+        arrA = [["([A-Za-z0-9]+) = ([A-Za-z0-9]+) to ([A-Za-z0-9]+)", "\\1 in range(\\2, \\3)"], ["function ([A-Za-z0-9]+)", "def \\1"], ["([A-Za-z0-9 ]+)MOD([A-Za-z0-9 ]+)", "\\1%\\2"], ["([A-Za-z0-9 ]+)DIV([A-Za-z0-9 ]+)", "\\1//\\2"]]
+        for a in range(0,len(arrA)):
+            code[line] = re.sub(arrA[a][0], arrA[a][1], code[line])
+        arrB = [["function$", "function"], ["MOD$", "MOD"], ["DIV$", "DIV"]]
+        for b in range(0,len(arrB)):
+            code[line] = code[line].replace(arrB[b][0], arrB[b][1])
     for j, k in enumerate(code):
         for i, v in enumerate(k.splitlines()):
             v = v.strip()
@@ -40,4 +42,4 @@ def parse(code):
 
     return "\n".join([i for i in final.splitlines() if i != ""])
 
-exec(parse(code), {"pspy_ver": 1.3})
+exec(parse(code), {"pspy_ver": 1.4})
