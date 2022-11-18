@@ -19,14 +19,14 @@
 ## Example Usage 🪁
 
 - Example #1 `(For Loops)`
-```
+```python
 for i = 0 to 5:
   print(i)
 next i
 ```
 
 - Example #2 `(While Loops & If Statements)`
-```
+```python
 x = True
 y = 0
 while x == True:
@@ -39,7 +39,7 @@ endwhile
 ```
 
 - Example #3 `(Functions & For Loops & Anti-Replace)`
-```
+```python
 function funcName(argument):
   for i = 0 to argument:
     print("the function$ says:")
